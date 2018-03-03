@@ -1,0 +1,25 @@
+@import '../../theme/sass/auth';
+
+.auth-block {
+  position: relative;
+
+  h1 {
+    font-size: 32px;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  .slogan {
+    text-align: right;
+    margin-bottom: 24px;
+
+    img {
+      height: 32px;
+      margin: 0 5px 0;
+    }
+  }
+
+  .al-copy {
+    padding: 0 0 30px 78px;
+    font-size: 12px;
+  }
+}

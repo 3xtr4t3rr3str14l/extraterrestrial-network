@@ -1,0 +1,9 @@
+.container {
+  composes: containerFluid from 'bootstrap-css-modules/css/container.css';
+  padding: 0;
+  margin: 0;
+}
+
+.mainArea {
+  margin-left: 280px;
+}
