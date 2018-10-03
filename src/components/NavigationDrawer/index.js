@@ -63,19 +63,58 @@ const NavigationDrawer = (props) => {
         <ListItem
           key={uuid()}
           value={1}
-          primaryText="NavDrawer Item 1"
-          onClick={() => alert('define an action for this placeholder')}
-        />
-        <ListItem
-          key={uuid()}
-          value={2}
-          primaryText="NavDrawer Item 2"
+          primaryText="Programming"
           nestedItems={[
             <ListItem
               key={uuid()}
+              value={2}
+              primaryText="Game"
+              onClick={() => props.onClick('GAME')}
+            />,
+            <ListItem
+              key={uuid()}
               value={3}
-              primaryText="Nested Item 1"
-              onClick={() => alert('define an action for this placeholder')}
+              primaryText="Github"
+              onClick={() => window.open('https://github.com/3xtr4t3rr3str14l', '_blank')}
+            />,
+          ]}
+        />
+        <ListItem
+          key={uuid()}
+          value={4}
+          primaryText="Music"
+          nestedItems={[
+            <ListItem
+              key={uuid()}
+              value={5}
+              primaryText="seres"
+              // onClick={() => props.onClick('MUSIC_SERES')}
+              onClick={() => window.open('https://somoseres.bandcamp.com', '_blank')}
+            />,
+            <ListItem
+              key={uuid()}
+              value={6}
+              primaryText="Starfruit"
+              // onClick={() => props.onClick('MUSIC_STARFRUIT')}
+              onClick={() => window.open('https://starfruit.bandcamp.com', '_blank')}
+            />,
+            <ListItem
+              key={uuid()}
+              value={7}
+              primaryText="K0m0d0tr0n"
+              onClick={() => window.open('https://soundcloud.com/k0m0d0tr0n', '_blank')}
+            />,
+            <ListItem
+              key={uuid()}
+              value={8}
+              primaryText="Black Wolf Nightmare"
+              onClick={() => window.open('https://blackwolfnightmare.bandcamp.com', '_blank')}
+            />,
+            <ListItem
+              key={uuid()}
+              value={9}
+              primaryText="The Royal Academia Cordofonica Ensemble"
+              onClick={() => window.open('https://soundcloud.com/alfonso-callejas/royal-academia-cordofonica-in-the-key-of-seafood', '_blank')}
             />,
           ]}
         />

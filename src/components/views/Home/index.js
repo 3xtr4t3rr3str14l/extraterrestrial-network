@@ -1,7 +1,8 @@
 import React from 'react';
+import Card from 'material-ui/Card';
 
 const Home = () => (
-  <h2>Home</h2>
+  <Card style={{ width: '100%' }}>Home</Card>
 );
 
 export default Home;
